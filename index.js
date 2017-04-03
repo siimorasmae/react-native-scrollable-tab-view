@@ -236,7 +236,7 @@ const ScrollableTabView = React.createClass({
     const {
       width,
       height,
-    } = e ? e.nativeEvent.layout : Dimensions.get('window');
+    } = Dimensions.get('window');
     const size = this.props.horizontal ? width : height;
 
     if (Math.round(size) !== Math.round(this.state.containerSize)) {
